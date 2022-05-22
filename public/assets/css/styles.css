@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800;900&display=swap');
+
+
+:root {
+    /* Tipo de Fuentes */
+    --letra-roboto: 'Roboto', sans-serif;
+    --letra-OpenSans: 'Open Sans', sans-serif;
+    --letra-lato: 'Lato', sans-serif;
+    --letra-poppins: 'Poppins', sans-serif;
+    --letra-robotoMono: 'Roboto Mono', sans-serif;
+    --letra-raleway: 'Raleway', sans-serif;
+    --letra-montserrat: 'Montserrat', sans-serif;
+    --letra-inter: 'Inter', sans-serif;
+
+
+    /* Color de Fuentes */
+
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+
+
+    /* Colores de Fondos */
+    --fondo-oscuro: rgb(22, 41, 54);
+    --fondo-claro: rgb(253, 252, 253);
+
+    /* color de fondo de boton modo claro y oscuro  */
+
+    --color-btn: #000;
+    --color-btn-dos: #fff;
+}
+
+body {
+    background-color: var(--fondo-claro);
+}
+
+
+/** diseño al scroll de navegacion ***/
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(14, 160, 228);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+/*** estilo a boton de modo claro y oscuro ****/
+
+
+.config {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+.switch {
+    display: block;
+    text-decoration: none;
+    background: var(--color-btn);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.switch__toggle {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.switch__toggle img {
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/**** modo oscuro ****/
+
+body.darkmode {
+    background-color: var(--fondo-oscuro);
+    color: #fff;
+}
+
+body.darkmode .switch {
+    background-color: var(--color-btn-dos);
+}
+
+
+.App {
+    font-family: var(--letra-montserrat);
+}
+
+
+.titulo__app {
+    font-family: var(--letra-poppins);
+    text-align: center;
+}
+
+button {
+    font-family: var(--letra-robotoMono);
+}
